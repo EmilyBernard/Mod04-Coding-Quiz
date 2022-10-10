@@ -1,5 +1,7 @@
-var timeEl = document.querySelector(".time");
 
+
+
+var timeEl = document.querySelector(".time");
 var secondsLeft = 60;
 
 
@@ -8,7 +10,7 @@ function setTime() {
     // Sets interval in variable
     var timerInterval = setInterval(function() {
       secondsLeft--;
-      timeEl.textContent = "Time: "+ secondsLeft;
+      timeEl.textContent = "Time left: "+ secondsLeft;
   
       if(secondsLeft === 0) {
         // Stops execution of action at set interval
