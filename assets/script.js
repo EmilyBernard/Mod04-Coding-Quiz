@@ -33,11 +33,16 @@ function setTime() {
        // An object that holds all the questions + possible answers.
        // In the array --> last digit gives the right answer position
         allQuestions = {
-          'What is Canada\'s national animal?' : ['Beaver', 'Duck', 'Horse', 0],
+
+          'How do you write "Hello World" in an alert box?' : ['msgBox("Hello World");', 'alert("Hello World");', 'alertBox(Hello World");', 'msg("Hello World");', 1],
           
-          'What is converted into alcohol during brewing?' : ['Grain', 'Sugar' , 'Water', 1],
-          
-          'In what year was Prince Andrew born? ' : ['1955', '1960', '1970', 1]
+          'Which event occurs when the user clicks on an HTML element?' : ['onclick', 'onmouseover', 'onmouseclick','onmouseover', 0],
+       
+          'How do you create a function in JavaScript?' : ['function:myFunction()', 'function myFunction()', 'function = myFunction()','None of the above', 1],
+
+          'Where is the correct place to insert a JavaScript?' : ['The <head> section', 'Both the <head> section and the <body> section are correct', 'The <body> section', 'None of the above', 1],
+
+          'What is the correct way to write a JavaScript array?' : ['var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")', 'var colors = "red", "green", "blue"', 'var colors = ["red", "green", "blue"]', 'var colors = (1:"red", 2:"green", 3:"blue")', 2]
         };
         
     function loadQuestion(curr) {
