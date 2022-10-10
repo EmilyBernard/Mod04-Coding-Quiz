@@ -5,25 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Fundamentals Coding Quiz</title>
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-    <nav>
 
+    <nav>
+    <h1 class="highScores" style="text-align:left">View High Scores</h1>
+    <h1 class="time" style="text-align:right;">Time left:</h1>
     </nav>
-    <h1 class="highScores" style="text-align:left"></h1>
-    <h1 class="time" style="text-align:right;"></h1>
+
+    <div class="wrapper">
+    <div id="quiz">
+      <h1>Trivia quiz</h1>
+      
+      <p class="questions"></p>
+      
+      <div class="answers"></div>         
+      
+      <div class="checkAnswers">
+        <h3>Correct?</h3>
+        <div class="checker">
+
+        </div>
+      </div>
+    </div>
+   
+  </div>  
+
     
-    <section class="container">
-    <a>
-        <img>
-    </a>
-    <div>We use the .setAttribute() method to change attributes of elements on our page.</div>
-    <p>We can change any element just by grabbing it via the DOM.</p>
-    <div class="change1">We use .querySelectorAll() to select multiple elements at the same time.</div>
-    <p id="change2">We can also grab elements using the id.</p>
-    </section>
-    
-        <script src="assets/js/script.js"></script>
+        <script src="assets/script.js"></script>
     
 </body>
 </html>
