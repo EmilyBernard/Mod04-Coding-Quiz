@@ -4,21 +4,29 @@
 var timeEl = document.querySelector(".time");
 var secondsLeft = 60;
 
-
+var score = 0; //set score to 0
+/*var total = 4; //total nmumber of questions*/
+/*var point = 1; //points per correct answer*/
+/*var highest = total * point;*/
 
 function setTime() {
     // Sets interval in variable
     var timerInterval = setInterval(function() {
       secondsLeft--;
       timeEl.textContent = "Time left: "+ secondsLeft;
-  
-      if(secondsLeft === 0) {
+
+      if(secondsLeft > 0){
+        stop(timerInterval)
+
+      }
+     
+      else if(secondsLeft === 0){ 
         // Stops execution of action at set interval
         clearInterval(timerInterval);
-        // Calls function to create and append image
-        sendMessage();
+        /*// Calls function to create and append image
+        sendMessage("Your Score = " + secondsLeft);*/
       }
-  
+    
     }, 1000);
   }
   setTime();
@@ -80,7 +88,7 @@ function setTime() {
     
     function checkAnswer(i, arr) {
       // This is the function that will run, when clicked on one of the answers
-      // Check if givenAnswer is sams as the correct one
+      // Check if givenAnswer is same as the correct one
       // After this, check if it's the last question:
       // If it is: empty the answerArea and let them know it's done.
       
@@ -111,21 +119,25 @@ function setTime() {
     // This function adds a div element to the page
     // Used to see if it was correct or false
     
-      var createDiv = document.createElement('div'),
-          txt       = document.createTextNode(current + 1);
+      var createDiv = document.createElement('div');
+         txt       = document.createTextNode(current + 1);  
       
       createDiv.appendChild(txt);
       
+      
       if (bool) {
-        
+  
         createDiv.className += 'correct';
         checker.appendChild(createDiv);
+       
       } else {
         createDiv.className += 'false';
         checker.appendChild(createDiv);
       }
     }
     
+
+
     
     // Start the quiz right away
     loadQuestion(current);
