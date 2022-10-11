@@ -16,13 +16,19 @@ function setTime() {
       if(secondsLeft === 0){ 
         // Stops execution of action at set interval
         clearInterval(timerInterval);
+        sendMessage();
       }
     
-
-
     }, 1000);
   }
   setTime();
+
+  // Function to create and append user input initials
+function sendMessage() {
+  timeEl.textContent = "Time's Up! ";
+  
+
+}
 
   /*function setInterval(){
 
@@ -156,6 +162,12 @@ function setTime() {
 let btn = document.createElement("button");
 btn.innerHTML = "Start Quiz";
 document.body.appendChild(btn);
+
+///////////////////
+
+var textElement = document.createElement("userInitials");
+  textElement.setAttribute("", "");
+  mainEl.appendChild(textElement);
 
 
     */

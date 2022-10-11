@@ -6,8 +6,8 @@ body, html {
     font-family: 'Roboto', sans-serif;
   }
 nav {
-    padding: .75rem;
-    margin-left: 15px;
+    padding: 10 px;
+    margin-left: 0px;
     font-size: 20px;
 }
 
@@ -42,7 +42,7 @@ nav {
   }
   
   .questions {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     font-style: italic;
     padding: 20px;
@@ -51,7 +51,7 @@ nav {
   .answers div{
   
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: darkslateblue;
     border-radius: 4px;
     color: white;
