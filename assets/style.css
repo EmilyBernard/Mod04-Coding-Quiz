@@ -45,12 +45,11 @@ nav {
     font-size: 28px;
     font-weight: 700;
     font-style: italic;
-    border-top: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
     padding: 20px;
   }
-  
+
   .answers div{
+  
     padding: 10px;
     font-size: 16px;
     background-color: darkslateblue;
@@ -65,6 +64,7 @@ nav {
   }
   
   .answers {
+    
     margin-block: 10px, 10px, 10px, 10px;
     padding: 10px 10px 10px 10px;
   }
@@ -84,10 +84,11 @@ nav {
     display: inline-block;
     width: 200px;
     margin: 0 auto;
+    color: #FFFFFF;
   }
   
   .correct, .false {
-    background-color: #109D59;
+    background-color: #33a65a;
     width: 60px;
     height: 30px;
     line-height: 30px;
@@ -98,5 +99,5 @@ nav {
   }
   
   .false {
-    background-color: #DC4437;
+    background-color: rgb(43, 36, 93);
   }

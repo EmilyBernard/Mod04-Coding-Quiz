@@ -1,13 +1,10 @@
 
 
-
 var timeEl = document.querySelector(".time");
 var secondsLeft = 60;
 
 var score = 0; //set score to 0
-/*var total = 4; //total nmumber of questions*/
-/*var point = 1; //points per correct answer*/
-/*var highest = total * point;*/
+
 
 function setTime() {
     // Sets interval in variable
@@ -15,22 +12,22 @@ function setTime() {
       secondsLeft--;
       timeEl.textContent = "Time left: "+ secondsLeft;
 
-      if(secondsLeft > 0){
-        stop(timerInterval)
-
-      }
      
-      else if(secondsLeft === 0){ 
+      if(secondsLeft === 0){ 
         // Stops execution of action at set interval
         clearInterval(timerInterval);
-        /*// Calls function to create and append image
-        sendMessage("Your Score = " + secondsLeft);*/
       }
     
+
+
     }, 1000);
   }
   setTime();
 
+  /*function setInterval(){
+
+
+  }*/
 
 
   window.onload = function () {
@@ -56,7 +53,7 @@ function setTime() {
         };
         
     function loadQuestion(curr) {
-    // This function loads all the question into the questionArea
+    // Loads all the questions into the questionArea
     // It grabs the current question based on the 'current'-variable
     
       var question = Object.keys(allQuestions)[curr];
@@ -81,7 +78,6 @@ function setTime() {
         createDiv.appendChild(text);      
         createDiv.addEventListener("click", checkAnswer(i, answers));
         
-        
         answerArea.appendChild(createDiv);
       }
     }
@@ -97,7 +93,8 @@ function setTime() {
             correctAnswer = arr[arr.length-1];
         
         if (givenAnswer === correctAnswer) {
-          addChecker(true);             
+
+          addChecker(true);          
         } else {
           addChecker(false);                        
         }
@@ -108,7 +105,8 @@ function setTime() {
           loadQuestion(current);
           loadAnswers(current);
         } else {
-          questionArea.innerHTML = 'Done';
+         
+          questionArea.innerHTML = 'Finished';
           answerArea.innerHTML = '';
         }
                                 
@@ -139,8 +137,25 @@ function setTime() {
 
 
     
-    // Start the quiz right away
+    // Starts the quiz right away
     loadQuestion(current);
     loadAnswers(current);
     
   };
+
+
+
+  /*unused code
+    if (n == total) {
+        $('#results').html('<h3>Your score is: ' + score + ' out of ' + highest + '!</h3> 
+        <button onclick="myScore()">Add Your Name To Scoreboard!</a>')
+        stop()
+    }
+///////////////////
+
+let btn = document.createElement("button");
+btn.innerHTML = "Start Quiz";
+document.body.appendChild(btn);
+
+
+    */
