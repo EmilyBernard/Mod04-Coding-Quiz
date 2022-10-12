@@ -7,9 +7,14 @@ Submitted for evaluation. Features working: Timer starts at 60 seconds. 'View hi
 Features NOT working: 'View High Scores' not set up (collected and displayed). Time doesn't stop when all questions answered. User added initials and scores not colloected.
 
 # Project Deployed
+https://emilybernard.github.io/Mod04-Coding-Quiz/
 
+# GitHub Repository
+https://github.com/EmilyBernard/Mod04-Coding-Quiz
 
 # Screenshot of webpage
+
+
 
 
 # Installation
