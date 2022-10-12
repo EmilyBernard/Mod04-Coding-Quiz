@@ -14,6 +14,7 @@ https://github.com/EmilyBernard/Mod04-Coding-Quiz
 
 # Screenshot of webpage
 
+<img width="1440" alt="Quiz Screen Shot " src="https://user-images.githubusercontent.com/112719573/195227962-505e1738-2048-4220-85f0-9832f52d0464.png">
 
 
 
